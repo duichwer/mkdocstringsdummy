@@ -3,7 +3,6 @@ This Module implementes a calculation for GSS
 """
 from typing import NamedTuple
 
-import numpy as np
 from nltk.tree import Tree
 
 
@@ -18,10 +17,7 @@ class GSS(NamedTuple):
     nAB: float
 
 
-def calc_gss(
-    a: Tree,
-    b: Tree,
-) -> GSS:
+def calc_gss(a: Tree, b: Tree) -> GSS:
     """
     Calculates the gss for Tree a and b
 
@@ -38,4 +34,3 @@ def calc_gss(
     nAB = 17
 
     return GSS(((2 * nAB)) / (nA + nB), nA, nB, nAB)
-
