@@ -1,0 +1,28 @@
+site_name: mkdocstringsdummy
+site_description: Automatic documentation from mkdocstringsdummy, for mkdocs.
+site_url: 
+repo_url: 
+repo_name: 
+
+nav:
+  - Overview: "index.md"
+  - Reference:
+    - gss.py: "reference/gss.md"
+theme:
+  name: "material"
+
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - mkdocstrings:

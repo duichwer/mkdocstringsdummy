@@ -1,0 +1,28 @@
+# DirEnv
+.venv
+# Packages
+*.egg
+!/tests/**/*.egg
+*.egg-info/
+/tests/fixtures/**/*.egg-info
+/dist/*
+build
+_build
+.cache
+*.so
+__pycache__
+.coverage
+
+# docs
+/site/
+/public/
+
+#jupyter notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Installer logs
+pip-log.txt
+
+*.gz
+

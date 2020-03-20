@@ -1,0 +1,10 @@
+[flake8]
+max-line-length = 99
+select = C,E,F,W,B,B950
+# Ignore E203 whitespace before ':'
+# Ignore W503 line break before binary operator -> not PEP8 compatible
+ignore = E501,E203,W503
+
+# Ignore unused import in __init__.py
+per-file-ignores =
+    src/mkdocstringsdummy/**/__init__.py:F401
